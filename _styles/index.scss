@@ -1,0 +1,17 @@
+@import "header.scss";
+@import "colors.scss";
+@import "nav.scss";
+@import "language.scss";
+@import "footer.scss";
+
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.langlogo{
+  width: 50px;
+}
+.latest-thumbnail{
+  width: 250px;
+}

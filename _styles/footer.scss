@@ -1,0 +1,56 @@
+.responsive-blog {
+  background: darken(#90909B, 25%);
+  padding: 3rem 3rem;
+  color: white;
+
+  .profilePicture{
+    height: 30vh;
+    margin-left: 50%;
+    transform: translate(-50%);
+    border-radius: 45%;
+  }
+
+  h4 {
+    @media screen and (max-width: 39.9375em) {
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    color: #90909B;
+  }
+
+  .mailing-list {
+    margin-bottom: 1.5rem;
+  }
+  .mailing-container {
+    margin-bottom: 2rem;
+  }
+
+  .about-section, .tag-section {
+    margin-bottom: 2rem;
+
+    a {
+      color: #0380CD;
+    }
+  }
+
+  .subscribe-button {
+    background-color:#0380CD;
+
+    &:hover {
+      background-color: darken(#0380CD, 5%);
+      transition: color 0.3s ease-in;
+    }
+  }
+
+  .fa-chevron-circle-up {
+    font-size: 3rem;
+    color: #90909B;
+
+    &:hover {
+      color: lighten(#90909B, 15%);
+      transition: color 0.3s ease-in;
+    }
+  }
+}

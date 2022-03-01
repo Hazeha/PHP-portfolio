@@ -1,0 +1,48 @@
+.responsive-blog {
+  background: #51515a;
+  padding: 3rem 3rem;
+  color: white;
+}
+.responsive-blog .profilePicture {
+  height: 30vh;
+  margin-left: 50%;
+  transform: translate(-50%);
+  border-radius: 45%;
+}
+@media screen and (max-width: 39.9375em) {
+  .responsive-blog h4 {
+    font-size: 1.5rem;
+  }
+}
+.responsive-blog p {
+  color: #90909B;
+}
+.responsive-blog .mailing-list {
+  margin-bottom: 1.5rem;
+}
+.responsive-blog .mailing-container {
+  margin-bottom: 2rem;
+}
+.responsive-blog .about-section, .responsive-blog .tag-section {
+  margin-bottom: 2rem;
+}
+.responsive-blog .about-section a, .responsive-blog .tag-section a {
+  color: #0380CD;
+}
+.responsive-blog .subscribe-button {
+  background-color: #0380CD;
+}
+.responsive-blog .subscribe-button:hover {
+  background-color: #0370b4;
+  transition: color 0.3s ease-in;
+}
+.responsive-blog .fa-chevron-circle-up {
+  font-size: 3rem;
+  color: #90909B;
+}
+.responsive-blog .fa-chevron-circle-up:hover {
+  color: #b8b8bf;
+  transition: color 0.3s ease-in;
+}
+
+/*# sourceMappingURL=footer.css.map */

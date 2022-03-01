@@ -1,0 +1,114 @@
+@import "colors.scss";
+
+
+
+
+.hero {
+    width: 100%;
+    .profilePicture {
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+        transform: translate(150px);
+    }
+
+    .cog-master{
+        position: absolute;
+        width: inherit;
+        height: inherit;
+    }
+    .bigcog1 {
+        position: absolute;
+        font-size: 250pt;
+        left: -200px;
+        top: -150px;
+        animation: spin 25s infinite linear;
+        color: #cb0b20;
+        opacity: 0.4;
+        z-index: 1;
+    }
+
+    .bigcog2 {
+        position: absolute;
+
+        font-size: 650px;
+        left: calc(50% - 325px);
+        top: 215px;
+        animation: spin 15s infinite linear;
+        color: #0000ff;
+        opacity: 0.4;
+        transform: translate(0%, 50%);
+        z-index: 1;
+        margin: 0;
+    }
+
+    .cog-container {
+        width: 100px;
+        height: 100px;
+        left: calc(100% - 100px);
+        top: 0px;
+        position: absolute;
+        //transform: translate(88px, -118px);
+
+        i {
+            position: absolute;
+        }
+
+        .c1 {
+            font-size: 28pt;
+            left: 50px;
+            top: 0px;
+            animation: spin 5s infinite linear;
+            color: $c1;
+        }
+
+        .c2 {
+            font-size: 18pt;
+            left: 70px;
+            top: 60px;
+            animation: spin 5s infinite linear;
+            color: $c2;
+        }
+
+        .c3 {
+            font-size: 22pt;
+            left: 70px;
+            top: 32px;
+            animation: spin 5s infinite reverse linear;
+            color: $c3;
+        }
+
+        .c4 {
+            font-size: 12pt;
+            left: 37px;
+            top: 20px;
+            animation: spin 3s infinite reverse linear;
+            color: $c4;
+        }
+
+        .c5 {
+            font-size: 29pt;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            animation: spin 5s infinite linear;
+            color: $c5;
+        }
+        @keyframes spin {
+            0% {transform: rotate(0deg);}
+            100% {transform: rotate(360deg)}
+        }
+    }
+}
+
+
+
+#navbar {
+    background-color: #333;
+    position: fixed;
+    top: -155px;
+    width: 100%;
+    transition: top 0.3s;
+}
+
+

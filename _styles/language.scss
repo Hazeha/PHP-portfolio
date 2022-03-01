@@ -1,0 +1,122 @@
+@import "colors";
+
+main{
+  background-color: #F8F9FA;
+  z-index: 100;
+}
+.gear-rack{
+  border:20px solid black;
+  border-image:url(../_assets/border.svg);
+}
+.border{
+
+}
+.languages{
+  display: grid;
+  grid-template-columns: auto 300px;
+
+  .lang-cog{
+    font-size: 300pt;
+    position: relative;
+    top: 50%;
+    transform: translate(50%, -200px);
+  }
+
+
+  .lang-info{
+    margin: 40px;
+    padding: 20px;
+  }
+
+  .project{
+    width: 33%;
+    height: 200px;
+  }
+}
+
+.recent-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  'title title'
+  'project assignment';
+
+  .recent-title {
+    grid-area: title;
+  }
+
+  .projects {
+    grid-area: project;
+  }
+
+  .assignment {
+    grid-area: assignment;
+  }
+}
+
+
+.icons {
+  z-index: 2;
+  font-size: 21pt;
+  text-align: center;
+  display: grid;
+  grid-template-columns:  5% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 5%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    ".  html5 . typescript . javascript . c ."
+    ". . vue . nodejs . firebase . ."
+    " . php . sass . angular . sql ."
+    ". . css3 . un4 .  threejs .  ."
+    ". react . scss . unity . bootstrap .";
+
+  .html5 {
+    grid-area: html5;
+    color: $html5;
+  }
+  .css3 { grid-area: css3;
+    color: $css3;}
+  .sass { grid-area: sass;
+    color: $sass;}
+  .scss { grid-area: scss;
+    color: $scss;}
+  .typescript { grid-area: typescript;
+    color: $typescript;}
+  .react { grid-area: react;
+    color: $react;}
+  .angular { grid-area: angular;
+    color: $angular;}
+  .vue { grid-area: vue;
+    color: $vue;}
+  .php { grid-area: php;
+    color: $php;}
+  .javascript { grid-area: javascript;
+    color: $javascript;}
+  .nodejs { grid-area: nodejs;
+    color: $nodejs;}
+  .sql { grid-area: sql;
+    color: $sql;}
+  .unity { grid-area: unity;
+    color: $unity;}
+  .firebase { grid-area: firebase;
+    color: $firebase;}
+  .un4 { grid-area: un4;
+    color: $un4;}
+  .threejs { grid-area: threejs;
+    color: $threejs;}
+  .c { grid-area: c;
+    color: $c;}
+  .bootstrap { grid-area: bootstrap;
+    color: $bootstrap;}
+}
+
+
+.list-group-item{
+  display: grid;
+  grid-template-columns:  60% 1fr 1fr 1fr ;
+}
+
+.load-more{
+  margin: 10px 0 10px 50%;
+  transform: translate(-50%, 0);
+}

@@ -1,0 +1,138 @@
+main {
+  background-color: #F8F9FA;
+  z-index: 100;
+}
+
+.gear-rack {
+  border: 20px solid black;
+  border-image: url(../_assets/border.svg);
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: auto 300px;
+}
+.languages .lang-cog {
+  font-size: 300pt;
+  position: relative;
+  top: 50%;
+  transform: translate(50%, -200px);
+}
+.languages .lang-info {
+  margin: 40px;
+  padding: 20px;
+}
+.languages .project {
+  width: 33%;
+  height: 200px;
+}
+
+.recent-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title title" "project assignment";
+}
+.recent-projects .recent-title {
+  grid-area: title;
+}
+.recent-projects .projects {
+  grid-area: project;
+}
+.recent-projects .assignment {
+  grid-area: assignment;
+}
+
+.icons {
+  z-index: 2;
+  font-size: 21pt;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 5%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ".  html5 . typescript . javascript . c ." ". . vue . nodejs . firebase . ." " . php . sass . angular . sql ." ". . css3 . un4 .  threejs .  ." ". react . scss . unity . bootstrap .";
+}
+.icons .html5 {
+  grid-area: html5;
+  color: #DD4B25;
+}
+.icons .css3 {
+  grid-area: css3;
+  color: #254BDD;
+}
+.icons .sass {
+  grid-area: sass;
+  color: #C76494;
+}
+.icons .scss {
+  grid-area: scss;
+  color: #C76494;
+}
+.icons .typescript {
+  grid-area: typescript;
+  color: #2F74C0;
+}
+.icons .react {
+  grid-area: react;
+  color: #05A5D1;
+}
+.icons .angular {
+  grid-area: angular;
+  color: #D61A15;
+}
+.icons .vue {
+  grid-area: vue;
+  color: #3FB27F;
+}
+.icons .php {
+  grid-area: php;
+  color: #7377AD;
+}
+.icons .javascript {
+  grid-area: javascript;
+  color: #EFD81D;
+}
+.icons .nodejs {
+  grid-area: nodejs;
+  color: #3A8338;
+}
+.icons .sql {
+  grid-area: sql;
+  color: #0075CF;
+}
+.icons .unity {
+  grid-area: unity;
+  color: #100B09;
+}
+.icons .firebase {
+  grid-area: firebase;
+  color: #F79B00;
+}
+.icons .un4 {
+  grid-area: un4;
+  color: #000000;
+}
+.icons .threejs {
+  grid-area: threejs;
+  color: #212121;
+}
+.icons .c {
+  grid-area: c;
+  color: #642076;
+}
+.icons .bootstrap {
+  grid-area: bootstrap;
+  color: #533B78;
+}
+
+.list-group-item {
+  display: grid;
+  grid-template-columns: 60% 1fr 1fr 1fr;
+}
+
+.load-more {
+  margin: 10px 0 10px 50%;
+  transform: translate(-50%, 0);
+}
+
+/*# sourceMappingURL=language.css.map */
